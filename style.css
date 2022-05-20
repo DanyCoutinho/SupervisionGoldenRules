@@ -5,7 +5,13 @@
     padding: 0px;
 };*/
 
+/* body {
+    margin: 10px;
+}; */
+
 main > section{
     display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 400px;
 };
-
