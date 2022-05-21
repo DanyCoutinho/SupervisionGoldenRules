@@ -9,9 +9,15 @@
     margin: 10px;
 }; */
 
-main > section{
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    width: 400px;
+section {
+    display: inline-table;
+};
+
+table#MVSRules {
+    margin: 0 auto;
+};
+
+table.MVSJobs {
+    border: 1;
+    width: 100%;
 };

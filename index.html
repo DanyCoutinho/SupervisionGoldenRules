@@ -23,7 +23,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="Contacts">
             <h2>Contatos</h2>
             <table>
                 <h3>Paris</h3>
@@ -154,7 +154,7 @@
             </table>
         </section>
         
-        <section>
+        <section class="GoldenRules">
             <h2>Supervision Golden Rules</h2>
             <ol>
                 <li>Não executar qualquer ação sobre um job em erro sem double check e OK do SL</li>
@@ -187,68 +187,84 @@
             A Tecla F3 salva qualquer alteração realizada. Para cancelar uma alteração usar CAN.
 
             O CrossCheck é obrigatório
-            <table>
-                <tr>
-                    <th>Jobs</th>
-                    <th>PRD (1 | B | D)</th>
-                    <th>Ext1</th>
-                    <th>REC / QUA</th>
-                    <th>Medidas de Segurança</th>
-                </tr>
-                <tr>
-                    <td>X*</td>
-                    <td>ICD @ BPCE-IT</td>
-                    <td>NPTC</td>
-                    <td>NPTC</td>
-                    <td>
-                        Edição do JCL:
-                        <ul>
-                            <li>Sempre adicione ",RESTART=" isso funconará como um HOLD.</li>
-                        </ul>
-                        Tratamento de um job:
-                        <ul>
-                            <li>Tratar apenas um job de cada vez.</li>
-                            <li>Utilize o JOBNAME nos filtros para isolar o job a ser tratado e evitar erros.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Y*</td>
-                    <td>ICD @ BPCE-IT</td>
-                    <td>NPTC</td>
-                    <td>NPTC</td>
-                </tr>
-                <tr>
-                    <td>F*</td>
-                    <td>ICD @ BPCE-IT</td>
-                    <td>NPTC</td>
-                    <td>NPTC</td>
-                </tr>
-                <tr>
-                    <td>Q*</td>
-                    <td>NPTC</td>
-                    <td>NPTC</td>
-                    <td>NPTC</td>
-                </tr>
-                <tr>
-                    <td>R*</td>
-                    <td>NPTC</td>
-                    <td>NPTC</td>
-                    <td>NPTC</td>
-                </tr>
-                <tr>
-                    <td>D*</td>
-                    <td></td>
-                    <td>NPTC</td>
-                    <td>NPTC</td>
-                </tr>
-                <tr>
-                    <td>I*</td>
-                    <td></td>
-                    <td>TIC</td>
-                    <td></td>
-                </tr>
-            </table>
+
+                <table class="MVSRules" border="1" width="600px" style="margin: 0 auto;" >
+                    <tr>
+                        <td style="width: 55%;" valign="top" >
+                            <table border="1" width="100%" >
+                                <tr>
+                                        <th>Jobs</th>
+                                        <th>PRD (1 | B | D)</th>
+                                        <th>Ext1</th>
+                                        <th>REC / QUA</th>
+                                    <tr>
+                                        <td>X*</td>
+                                        <td>ICD @ BPCE-IT</td>
+                                        <td>NPTC</td>
+                                        <td>NPTC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Y*</td>
+                                        <td>ICD @ BPCE-IT</td>
+                                        <td>NPTC</td>
+                                        <td>NPTC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F*</td>
+                                        <td>ICD @ BPCE-IT</td>
+                                        <td>NPTC</td>
+                                        <td>NPTC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q*</td>
+                                        <td>NPTC</td>
+                                        <td>NPTC</td>
+                                        <td>NPTC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>R*</td>
+                                        <td>NPTC</td>
+                                        <td>NPTC</td>
+                                        <td>NPTC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>D*</td>
+                                        <td></td>
+                                        <td>NPTC</td>
+                                        <td>NPTC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>I*</td>
+                                        <td></td>
+                                        <td>TIC</td>
+                                        <td></td>
+                                    </tr>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 45%;" valign="top" >
+                            <table border="1" width="100%" >
+                                <tr>
+                                        <th>Medidas de Segurança</th>
+                                    <tr>
+                                        <td>
+                                            Edição do JCL:
+                                            <ul>
+                                                <li>Sempre adicione ",RESTART=" isso funconará como um HOLD.</li>
+                                            </ul>
+                                            Tratamento de um job:
+                                            <ul>
+                                                <li>Tratar apenas um job de cada vez.</li>
+                                                <li>Utilize o JOBNAME nos filtros para isolar o job a ser tratado e evitar erros.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            
             <ol>
                 <li>Jobs R* com ICD criado (SNOW) enviar o ICD para a devida equipa de produção.</li>
                 <li>Deve ser tratado.</li>
@@ -269,10 +285,10 @@
                 </tr>
             </table>
 
-            Atenção os jobs não referenciados na tabela acima devem ser tratados de acordo com as suas instruções padrão
+            Atenção os jobs não referenciados na tabela acima devem ser tratados de acordo com as suas instruções padrão.
         </section>
 
-        <section>
+        <section class="Alphabet">
             <h2>Alphabet</h2>
             <table>
                 <tr>
