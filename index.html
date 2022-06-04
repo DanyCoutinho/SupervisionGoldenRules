@@ -23,10 +23,10 @@
     </header>
 
     <main>
-        <section class="Contacts">
-            <h2>Contatos</h2>
+        <section id="Contacts">
             <table>
-                <h3>Paris</h3>
+                <caption>Contatos</caption>
+                <th colspan="2">Paris</th>
                 <tr>
                     <th>Equipa</th>
                     <th>Número</th>
@@ -50,7 +50,7 @@
             </table>
 
             <table>
-                <h3>Porto</h3>
+                <th colspan="2">Porto</th>
                 <tr>
                     <th>Grupo</th>
                     <th>Número</th>
@@ -66,7 +66,7 @@
             </table>
 
             <table>
-                <h3>Dicas</h3>
+                <th colspan="2">Dicas</th>
                 <tr>
                     <th>Número começa com</th>
                     <th>Extensão</th>
@@ -86,7 +86,7 @@
             </table>
 
             <table>
-                <h3>Supervisão</h3>
+                <th colspan="2">Supervisão</th>
                 <tr>
                     <th>Número</th>
                     <th>Extensão</th>
@@ -98,7 +98,7 @@
             </table>
 
             <table>
-                <h3>Pilotage BPCE-IT:</h3>
+                <th colspan="2">Pilotage BPCE-IT:</th>
                 <tr>
                     <th>Grupo</th>
                     <th>Número</th>
@@ -114,7 +114,7 @@
             </table>
 
             <table>
-                <h3>Support Teams</h3>
+                <th colspan="2">Support Teams</th>
                 <tr>
                     <th>Equipa</th>
                     <th>Número</th>
@@ -154,9 +154,9 @@
             </table>
         </section>
         
-        <section class="GoldenRules">
+        <section id="GoldenRules">
             <h2>Supervision Golden Rules</h2>
-            <ol>
+            <ol id="RulesList">
                 <li>Não executar qualquer ação sobre um job em erro sem double check e OK do SL</li>
                 <li>Nenhum SJR é feito sem validação</li>
                 <li>
@@ -184,10 +184,10 @@
             </ol>
 
             <!--Destacar-->
-            A Tecla F3 salva qualquer alteração realizada. Para cancelar uma alteração usar CAN.
+            <p>A Tecla F3 salva qualquer alteração realizada. Para cancelar uma alteração usar CAN.</p>
 
-            O CrossCheck é obrigatório
-
+            <p>O CrossCheck é obrigatório</p>
+            <!--
                 <table class="MVSRules" border="1" width="600px" style="margin: 0 auto;" >
                     <tr>
                         <td style="width: 55%;" valign="top" >
@@ -264,6 +264,75 @@
                         </td>
                     </tr>
                 </table>
+            -->
+            <table id="MVSJobs">
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">Jobs</th>
+                        <th colspan="3">Prod</th>
+                        <th>Prod</th>
+                        <th rowspan="2">Recette and Qualif</th>
+                        <th rowspan="2">Medidas de Segurança</th>
+                    </tr>
+                    <tr>
+                        <th>PRD1</th>
+                        <th>PRDB</th>
+                        <th>PRDD</th>
+                        <th>EXT1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">X*</th>
+                        <td colspan="3">ICD @ BPCE-IT</td>
+                        <td>NPTC</td>
+                        <td>NPTC</td>
+                        <td rowspan="7">
+                            Edição do JCL:
+                            Sempre adicione ",RESTART=" isso funconará como um HOLD.
+                            Tratamento de um job:
+                            Tratar apenas um job de cada vez.
+                            Utilize o JOBNAME nos filtros para isolar o job a ser tratado e evitar erros.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Y*</th>
+                        <td colspan="3">ICD @ BPCE-IT</td>
+                        <td>NPTC</td>
+                        <td>NPTC</td>
+                    </tr>
+                    <tr>
+                        <th>F*</th>
+                        <td colspan="3">ICD @ BPCE-IT</td>
+                        <td>NPTC</td>
+                        <td>NPTC</td>
+                    </tr>
+                    <tr>
+                        <th>Q*</th>
+                        <td colspan="3">NPTC</td>
+                        <td>NPTC</td>
+                        <td>NPTC</td>
+                    </tr>
+                    <tr>
+                        <th>R*</th>
+                        <td colspan="3">NPTC 2</td>
+                        <td>NPTC</td>
+                        <td>NPTC 1</td>
+                    </tr>
+                    <tr>
+                        <th>D*</th>
+                        <td colspan="3"></td>
+                        <td>NPTC</td>
+                        <td>NPTC</td>
+                    </tr>
+                    <tr>
+                        <th>I*</th>
+                        <td colspan="3"></td>
+                        <td>TIC</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
             
             <ol>
                 <li>Jobs R* com ICD criado (SNOW) enviar o ICD para a devida equipa de produção.</li>
@@ -271,7 +340,7 @@
                 <li>Todos os jobs R listados abaixo devem ser tratados.</li>
             </ol>
 
-            <table>
+            <table id="RJobs">
                 <tr>
                     <th>R*CHT*</th>
                     <th>R*EOR*</th>
@@ -288,7 +357,7 @@
             Atenção os jobs não referenciados na tabela acima devem ser tratados de acordo com as suas instruções padrão.
         </section>
 
-        <section class="Alphabet">
+        <section id="Alphabet">
             <h2>Alphabet</h2>
             <table>
                 <tr>

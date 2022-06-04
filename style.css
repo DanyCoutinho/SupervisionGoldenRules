@@ -1,23 +1,44 @@
 @charset "UTF-8";
 
-/* * {
+* {
     margin: 0px;
-    padding: 0px;
-};*/
+    padding: 0px;    
+}
 
-/* body {
+header {
     margin: 10px;
-}; */
+}
+
+body {
+    margin: 10px;
+}
+
+main {
+    padding: 10px;
+}
 
 section {
     display: inline-table;
-};
+    margin: 15px;
+}
 
-table#MVSRules {
-    margin: 0 auto;
-};
+table#MVSJobs {
+    border-collapse: collapse;
+    width: 700px;
+}
 
-table.MVSJobs {
-    border: 1;
-    width: 100%;
-};
+table#MVSJobs th {
+    border: 1px solid black;
+}
+
+table#MVSJobs td {
+    border: 1px solid black;
+}
+
+table#RJobs {
+    border-collapse: collapse;
+}
+
+table#RJobs th {
+    border: 1px solid black;
+}
