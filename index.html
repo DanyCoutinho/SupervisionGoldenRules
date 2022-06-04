@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <!--
         <div>
             <button>Dark / Light</button>
         </div>
@@ -18,15 +19,16 @@
             <a href="">French</a>
             <a href="">Portuguese</a>
         </div>
+        -->
 
         <h1>Regras de Ouro da Supervisão</h1>
     </header>
 
     <main>
-        <section id="Contacts">
-            <table>
+        <section id="Numbers">
+            <table id="Contacts">
                 <caption>Contatos</caption>
-                <th colspan="2">Paris</th>
+                <th class="title" colspan="2">Paris</th>
                 <tr>
                     <th>Equipa</th>
                     <th>Número</th>
@@ -48,7 +50,7 @@
                     <td>83987</td>
                 </tr>
 
-                <th colspan="2">Porto</th>
+                <th class="title" colspan="2">Porto</th>
                 <tr>
                     <th>Grupo</th>
                     <th>Número</th>
@@ -62,7 +64,7 @@
                     <td>122 (221 203 122)</td>
                 </tr>
 
-                <th colspan="2">Dicas</th>
+                <th class="title" colspan="2">Dicas</th>
                 <tr>
                     <th>Número começa com</th>
                     <th>Extensão</th>
@@ -80,7 +82,7 @@
                     <td>2</td>
                 </tr>
 
-                <th colspan="2">Supervisão</th>
+                <th class="title" colspan="2">Supervisão</th>
                 <tr>
                     <th>Número</th>
                     <th>Extensão</th>
@@ -90,7 +92,7 @@
                     <td>81111</td>
                 </tr>
 
-                <th colspan="2">Pilotage BPCE-IT:</th>
+                <th class="title" colspan="2">Pilotage BPCE-IT:</th>
                 <tr>
                     <th>Grupo</th>
                     <th>Número</th>
@@ -104,7 +106,7 @@
                     <td>01.87.25.49.00</td>
                 </tr>
 
-                <th colspan="2">Support Teams</th>
+                <th class="title" colspan="2">Support Teams</th>
                 <tr>
                     <th>Equipa</th>
                     <th>Número</th>
@@ -145,7 +147,6 @@
         </section>
         
         <section id="GoldenRules">
-            <h2>Supervision Golden Rules</h2>
             <ol id="RulesList">
                 <li>Não executar qualquer ação sobre um job em erro sem double check e OK do SL</li>
                 <li>Nenhum SJR é feito sem validação</li>
@@ -174,87 +175,11 @@
             </ol>
 
             <!--Destacar-->
-            <p>A Tecla F3 salva qualquer alteração realizada. Para cancelar uma alteração usar CAN.</p>
-
-            <p>O CrossCheck é obrigatório</p>
-            <!--
-                <table class="MVSRules" border="1" width="600px" style="margin: 0 auto;" >
-                    <tr>
-                        <td style="width: 55%;" valign="top" >
-                            <table border="1" width="100%" >
-                                <tr>
-                                        <th>Jobs</th>
-                                        <th>PRD (1 | B | D)</th>
-                                        <th>Ext1</th>
-                                        <th>REC / QUA</th>
-                                    <tr>
-                                        <td>X*</td>
-                                        <td>ICD @ BPCE-IT</td>
-                                        <td>NPTC</td>
-                                        <td>NPTC</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Y*</td>
-                                        <td>ICD @ BPCE-IT</td>
-                                        <td>NPTC</td>
-                                        <td>NPTC</td>
-                                    </tr>
-                                    <tr>
-                                        <td>F*</td>
-                                        <td>ICD @ BPCE-IT</td>
-                                        <td>NPTC</td>
-                                        <td>NPTC</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Q*</td>
-                                        <td>NPTC</td>
-                                        <td>NPTC</td>
-                                        <td>NPTC</td>
-                                    </tr>
-                                    <tr>
-                                        <td>R*</td>
-                                        <td>NPTC</td>
-                                        <td>NPTC</td>
-                                        <td>NPTC</td>
-                                    </tr>
-                                    <tr>
-                                        <td>D*</td>
-                                        <td></td>
-                                        <td>NPTC</td>
-                                        <td>NPTC</td>
-                                    </tr>
-                                    <tr>
-                                        <td>I*</td>
-                                        <td></td>
-                                        <td>TIC</td>
-                                        <td></td>
-                                    </tr>
-                                </tr>
-                            </table>
-                        </td>
-                        <td style="width: 45%;" valign="top" >
-                            <table border="1" width="100%" >
-                                <tr>
-                                        <th>Medidas de Segurança</th>
-                                    <tr>
-                                        <td>
-                                            Edição do JCL:
-                                            <ul>
-                                                <li>Sempre adicione ",RESTART=" isso funconará como um HOLD.</li>
-                                            </ul>
-                                            Tratamento de um job:
-                                            <ul>
-                                                <li>Tratar apenas um job de cada vez.</li>
-                                                <li>Utilize o JOBNAME nos filtros para isolar o job a ser tratado e evitar erros.</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            -->
+            <div id="Destaque">
+                <p>A Tecla F3 salva qualquer alteração realizada. Para cancelar uma alteração usar CAN.</p>
+                <p>O CrossCheck é obrigatório</p>
+            </div>
+            
             <table id="MVSJobs">
                 <thead>
                     <tr>
@@ -324,7 +249,7 @@
                 </tbody>
             </table>
             
-            <ol>
+            <ol id="LegendTable">
                 <li>Jobs R* com ICD criado (SNOW) enviar o ICD para a devida equipa de produção.</li>
                 <li>Deve ser tratado.</li>
                 <li>Todos os jobs R listados abaixo devem ser tratados.</li>
@@ -344,16 +269,16 @@
                 </tr>
             </table>
 
-            Atenção os jobs não referenciados na tabela acima devem ser tratados de acordo com as suas instruções padrão.
+            <small>Atenção os jobs não referenciados na tabela acima devem ser tratados de acordo com as suas instruções padrão.</small>
         </section>
 
-        <section id="Alphabet">
-            <h2>Alphabet</h2>
-            <table>
+        <section id="Letters">
+            <table id="Alphabet">
+                <caption>Alphabet</caption>
                 <tr>
-                    <th>Letter</th>
-                    <th>English</th>
-                    <th>French</th>
+                    <th class="title">Letter</th>
+                    <th class="title">English</th>
+                    <th class="title">French</th>
                 </tr>
                 <tr>
                     <td>A</td>
@@ -490,9 +415,7 @@
     </main>
 
     <footer>
-        <div>
             <h4>Developed by Dany Coutinho</h4>
-        </div>
     </footer>
 </body>
 </html>

@@ -5,40 +5,148 @@
     padding: 0px;    
 }
 
-header {
-    margin: 10px;
+header h1 {
+    text-align: center;
+    color: goldenrod;
 }
 
 body {
-    margin: 10px;
+    margin: auto;
 }
 
 main {
     padding: 10px;
+    width: 98%;
 }
 
 section {
     display: inline-table;
-    margin: 15px;
+    margin: 10px;
+}
+
+caption {
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-bottom: none;
+    padding: 5px;
+    background-color: aliceblue;
+    color: darkblue;
+    font-weight: bold;
+}
+/*---------------------------CONTACTS SECTION------------------------------------*/
+section#Numbers {
+    width: 30vh;
+}
+
+table#Contacts {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#Contacts th {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+th.title {
+    background-color: aliceblue;
+    color: darkblue;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+table#Contacts td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2px;
+    font-size: 1em;
+}
+/*---------------------------RULES SECTION------------------------------------*/
+section#GoldenRules {
+    width: 106vh;
+    font-size: 1em;
+}
+
+section#GoldenRules table {
+    margin: auto;
+    width: 106vh;
+}
+
+section#GoldenRules ol, ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+div#Destaque {
+    background-color: darkblue;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 table#MVSJobs {
     border-collapse: collapse;
-    width: 700px;
 }
 
 table#MVSJobs th {
     border: 1px solid black;
+    padding: 5px;
+    background-color: aliceblue;
+    color: darkblue;
 }
 
 table#MVSJobs td {
     border: 1px solid black;
+    text-align: center;
+}
+
+table#MVSJobs tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+ol#LegendTable {
+    margin: 10px 0px 10px 0px;
 }
 
 table#RJobs {
     border-collapse: collapse;
+    background-color: aliceblue;
+    color: darkblue;
 }
 
 table#RJobs th {
     border: 1px solid black;
+}
+
+small {
+    display: block;
+    text-align: center;
+}
+
+
+/*---------------------------ALPHABET SECTION------------------------------------*/
+section#Letters {
+    width: 50vh;
+}
+
+table#Alphabet {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#Alphabet th, td {
+    border: 1px solid black;
+}
+
+table#Alphabet td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2px;
+    font-size: 1em;
+}
+/*---------------------------FOOTER SECTION------------------------------------*/
+footer h4 {
+    text-align: center;
 }
